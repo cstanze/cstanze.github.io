@@ -1,0 +1,19 @@
+.Project_NoFocus {
+  filter: blur(3px);
+  opacity: 0.6;
+  user-select: none;
+}
+
+.Project_Focus {
+  filter: blur(0px);
+}
+
+.Project_NoFocus > .Project_Desc {
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.Project_Focus > .Project_Desc {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}

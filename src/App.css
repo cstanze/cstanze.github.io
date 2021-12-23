@@ -1,38 +1,148 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translateY(-50%) translateX(-50%);
+  /* width: 50%; */
+  /* height: 50%; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App_Sized {
+  width: 50%;
+  height: 65%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Essentially, this animation stacks all the child elements on top of each other. */
+@keyframes EntryMessageStackUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@keyframes EntryMessageStackUpMore {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-200%);
+  }
+}
+
+@keyframes EntryLoader {
+ 0% {
+  transform:translateX(10%);
+ }
+
+ to {
+  transform:translateX(290%);
+ }
+}
+
+.App-entryMessage {
   display: flex;
+  flex: 1;
+  flex-direction: column; 
+}
+
+.PSNoAnimation.App-entryMessage > * {
+  animation: none !important;
+}
+
+.App-entryMessage > :nth-child(2) {
+  animation: EntryMessageStackUp 1.3s ease-in-out forwards;
+}
+
+.App-entryMessage > :last-child {
+  animation: EntryMessageStackUpMore 1.3s ease-in-out forwards;
+}
+
+.App-entryLoader {
+  height: 4px;
+  width: 100%;
+  background-color: var(--bg-gray);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.App-entryLoaderInner {
+  border-radius: 20px;
+  height: 100%;
+  width: 50%;
+  background-color: var(--accent);
+  position: relative;
+  left: -50%;
+  animation: EntryLoader 2s ease-in-out 0.5s infinite;
+  animation-direction: alternate;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  /* height: 50%; */
+  /* width: 35%; */
+  /* transform: translateX(95%); */
+}
+
+.App-mainLeft,
+.App-mainRight {
+  display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-Hr {
+  width: 100%;
+  /* height: 1px; */
+  color: #3a3a3a;
+  margin: 0;
+  opacity: 0.5;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-mainLeftTop,
+.App-mainRightTop {
+  margin-bottom: 10px;
+}
+
+/*
+.App-main.EnableBubbles > .App-mainLeft > .App-mainLeftTop,
+.App-main.EnableBubbles > .App-mainRight > .App-mainRightTop,
+.App-main.EnableBubbles > .App-mainLeft > .App-mainLeftBottom,
+.App-main.EnableBubbles > .App-mainRight > .App-mainRightBottom  {
+  @apply shadow-inner-light;
+  @apply rounded-md;
+  @apply p-2;
+}
+*/
+
+.App-mainLeftTop,
+.App-mainRightTop,
+.App-mainLeftBottom,
+.App-mainRightBottom {
+  width: calc(100% - 10px);
+  height: 100%;
+}
+
+.App-mainRightTop,
+.App-mainRightBottom {
+  background-color: var(--accent);
+  /* filter: brightness(0.8); */
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
 }
