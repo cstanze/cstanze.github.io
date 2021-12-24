@@ -35,7 +35,7 @@ jobs:
     - run: git stash
     - run: git fetch origin
     - run: git checkout gh-pages
-    - run: git stash pop
+    - run: git stash apply
     - run: git add .
     - run: git commit -m "Deployed to gh-pages"
     - run: git push origin gh-pages
