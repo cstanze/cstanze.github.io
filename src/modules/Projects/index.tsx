@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import IProjectItem from "../../types/ProjectItem"
 import ProjectItems from './Projects'
 import './Projects.css'
