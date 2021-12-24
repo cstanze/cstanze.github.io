@@ -21,7 +21,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: fregante/setup-git-user@v1
+    - run: git config --global user.name "github-actions[bot]"
+    - run: git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
