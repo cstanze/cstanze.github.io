@@ -23,7 +23,7 @@ const App = () => {
   // I'm the one who wrote this.
   // Kill me.
   useEffect(() => {
-    fetch("https://cdn.exerra.xyz/karen/profile?id=334067823229796367&fetchUser=true").then(async x => {
+    fetch("https://api.exerra.xyz/karen/profile?id=334067823229796367&fetchUser=true").then(async x => {
       setSelfUser(await x.json())
       // return;
       // eslint-disable-next-line no-unreachable
