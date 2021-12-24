@@ -33,6 +33,7 @@ jobs:
     - run: cp -r build/* ./
     - run: git add .
     - run: git stash
+    - run: git fetch origin
     - run: git checkout gh-pages
     - run: git stash pop
     - run: git add .
