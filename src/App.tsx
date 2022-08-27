@@ -75,16 +75,16 @@ const App = () => {
             <Projects />
           </div>
           <div className="App-mainRight">
-            <div className="App-mainRightTop">
-              {/*<span className="text-2xl font-bold">
+            {/*<div className="App-mainRightTop">
+              <span className="text-2xl font-bold">
                 More soon ... &lt;3
-              </span>*/}
-            </div>
-            <div className="App-mainRightBottom">
-              {/*<span className="text-2xl font-bold">
+              </span>
+            </div>*/}
+            {/*<div className="App-mainRightBottom">
+              <span className="text-2xl font-bold">
                 More soon ... &lt;3
-              </span>*/}
-            </div>
+              </span>
+            </div>*/}
           </div>
         </div>
       </div>
