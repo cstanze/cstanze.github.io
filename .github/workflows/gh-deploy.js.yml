@@ -30,7 +30,9 @@ jobs:
     - run: npm install --include=dev
     - run: npm run build
     - run: git fetch origin
-    - run: git add build/* -f 
+    #- run: git add build/*
+    - run: git stash save
     - run: git checkout gh-pages -f
+    - run: git stash pop
     - run: git commit -m "Deployed to gh-pages"
     - run: git push origin gh-pages
