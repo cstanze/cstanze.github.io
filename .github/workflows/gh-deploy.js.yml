@@ -34,6 +34,7 @@ jobs:
     - run: git stash
     - run: git fetch origin
     - run: git checkout gh-pages
+    - run: rm -rf *
     - run: git stash show -p | git apply
     - run: git stash drop
     - run: git add .
