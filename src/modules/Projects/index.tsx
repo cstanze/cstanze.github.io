@@ -4,7 +4,7 @@ import './Projects.css'
 
 const createProjectField = (item: IProjectItem, focused: boolean) => {
   return (
-    <div className={`${focused ? 'Project_Focus' : 'Project_NoFocus'}`} key={item.id.toString()}>
+    <div className={`${focused ? 'Project_Focus' : 'Project_NoFocus'}`} key={item.id.toString()} style={{ marginTop: '10px' }}>
       <span className="text-lg font-bold PSRounded flex flex-1 justify-center flex-row items-center" id={item.id.toString()}>
         {item.title} &nbsp;- &nbsp;
         {item.icon}

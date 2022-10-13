@@ -73,10 +73,12 @@ export const UserProfile = () => {
                   />
                   <ProfileIcon
                     Icon={SiMinutemailer}
-                    href={`mailto:${profile?.profile.email}`}
+                    // href={`mailto:${profile?.profile.email}`}
+                    href={`mailto:jules.nieves0301@gmail.com`}
                     activeColor='#00D1B2'
                   />
                 </IconContext.Provider>
+
               </div>
             </div>
             <div className="App-mainLeftTopInfo flex flex-1 flex-col">

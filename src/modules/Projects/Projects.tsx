@@ -1,5 +1,5 @@
 import { FaPython } from "react-icons/fa"
-import { SiCplusplus, SiTypescript } from "react-icons/si"
+import { SiCplusplus, SiTypescript, SiRust, SiApple } from "react-icons/si"
 import { GoMarkGithub } from "react-icons/go"
 import IProjectItem from "../../types/ProjectItem"
 
@@ -15,20 +15,32 @@ export const ProjectItems: IProjectItem[] = [
   },
   {
     id: 1,
-    title: 'Blossom & Rose (in progress)',
-    description: 'Interpreted/Compiled language specifications and an accompanying compiler/VM',
+    title: 'Erys (WIP)',
+    description: 'A compiler written in C++ for a language that allows for effective and simple code solutions across multiple platforms using LLVM',
     icon:  <SiCplusplus />,
   },
   {
     id: 2,
-    title: 'Zen',
-    description: 'Simple and minimalistic build system',
-    icon: <FaPython />,
+    title: "June",
+    description: "A modular, VM-based language with components written in C and C++. Currently being rewritten in Rust for extra compatibility.",
+    icon: <SiRust />
   },
   {
     id: 3,
+    title: 'Zen (WIP)',
+    description: 'A build system written in Python with build configuration files written in YAML',
+    icon: <FaPython />,
+  },
+  {
+    id: 4,
+    title: "Mae",
+    description: "A Proof of Concept Control Center replacement for iOS written in Objective-C",
+    icon: <SiApple />,
+  },
+  {
+    id: 5,
     title: 'Many more',
-    description: 'Check out my GitHub for more projects',
+    description: 'Feel free to check out my GitHub for more projects',
     icon: <GoMarkGithub />,
   },
 ]

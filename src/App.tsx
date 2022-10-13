@@ -68,13 +68,13 @@ const App = () => {
           </div>
         </div>
         <div ref={appMainRef} className="App-main EnableBubbles PSTransitionOpacity PSDisplayNone opacity-0">
-          <div className="App-mainLeft">
+          <div className="App-mainLeft" style={{ flex: '0.5' }}>
             <div className="App-mainLeftTop flex-1 flex-row justify-center">
               <UserProfile />
             </div>
             <Projects />
           </div>
-          <div className="App-mainRight">
+          {/* <div className="App-mainRight"> */}
             {/*<div className="App-mainRightTop">
               <span className="text-2xl font-bold">
                 More soon ... &lt;3
@@ -85,7 +85,7 @@ const App = () => {
                 More soon ... &lt;3
               </span>
             </div>*/}
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </UserProfileContext.Provider>
