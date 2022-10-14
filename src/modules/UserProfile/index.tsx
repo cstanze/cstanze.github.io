@@ -48,7 +48,7 @@ export const UserProfile = () => {
                 <IconContext.Provider value={{size: '2em'}}>
                   <ProfileIcon
                     Icon={GoMarkGithub}
-                    href={`https://github.com/${profile?.username}`}
+                    href={`https://github.com/cstanze`}
                     activeColor="#333"
                   />
                   <ProfileIcon
