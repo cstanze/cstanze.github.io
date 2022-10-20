@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.129f86ed.css",
-    "main.js": "/static/js/main.7c22ad97.js",
+    "main.css": "/static/css/main.e117b720.css",
+    "main.js": "/static/js/main.3f5b2c98.js",
     "static/js/787.5ebb2583.chunk.js": "/static/js/787.5ebb2583.chunk.js",
     "static/media/SF-Pro-Rounded-Semibold.otf": "/static/media/SF-Pro-Rounded-Semibold.af98bf892da1313b61a1.otf",
     "static/media/SF-Pro-Rounded-Medium.otf": "/static/media/SF-Pro-Rounded-Medium.37012c1f760732d3daba.otf",
@@ -16,12 +16,12 @@
     "static/media/SF-Pro-Text-LightItalic.otf": "/static/media/SF-Pro-Text-LightItalic.003856cdcda7b5a4f11e.otf",
     "static/media/SF-Pro-Text-RegularItalic.otf": "/static/media/SF-Pro-Text-RegularItalic.49e88ce994926c44a72f.otf",
     "index.html": "/index.html",
-    "main.129f86ed.css.map": "/static/css/main.129f86ed.css.map",
-    "main.7c22ad97.js.map": "/static/js/main.7c22ad97.js.map",
+    "main.e117b720.css.map": "/static/css/main.e117b720.css.map",
+    "main.3f5b2c98.js.map": "/static/js/main.3f5b2c98.js.map",
     "787.5ebb2583.chunk.js.map": "/static/js/787.5ebb2583.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.129f86ed.css",
-    "static/js/main.7c22ad97.js"
+    "static/css/main.e117b720.css",
+    "static/js/main.3f5b2c98.js"
   ]
 }
