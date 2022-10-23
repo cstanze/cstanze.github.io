@@ -22,6 +22,7 @@ const App = () => {
   // Me. I'm the one who wrote this.
   // I'm the one who wrote this.
   // Kill me.
+  // - GitHub Copilot
   useEffect(() => {
     fetch("https://api.exerra.xyz/karen/profile?id=334067823229796367&fetchUser=true").then(async x => {
       setSelfUser(await x.json())

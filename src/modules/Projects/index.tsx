@@ -60,7 +60,7 @@ export const Projects = () => {
 
   return (
     <div 
-      className="App-mainLeftBottom flex flex-col text-center justify-around overflow-scroll max-h-36 md:max-h-auto"
+      className="App-mainLeftBottom flex flex-col text-center justify-around overflow-scroll max-h-44 shadow-gray-500 md:shadow-none shadow-inner md:max-h-full"
       // onMouseEnter={() => setPaused(true)}
       // onMouseLeave={() => setPaused(false)}
     >
