@@ -9,13 +9,15 @@ const blurTimer = setTimeout(() => {})
 const onBlur = () => {
   clearTimeout(blurTimer)
   setTimeout(() => {
-    document.title = "Asleep 💤 | cstanze"
-  }, 5000)
+    document.title = "Asleep - cstanze"
+    document.getElementById('favicon').href=href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💤</text></svg>" 
+    }, 5000)
 }
 
 const onFocus = () => {
   clearTimeout(blurTimer)
-  document.title = "Awake 🌱 | cstanze"
+  document.title = "Awake - cstanze"
+  document.getElementById('favicon').href=href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>"
 }
 
 window.addEventListener('blur', onBlur)
