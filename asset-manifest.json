@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.92e0927f.css",
+    "main.css": "/static/css/main.30ccb1cb.css",
     "main.js": "/static/js/main.e26b739c.js",
     "static/js/787.5ebb2583.chunk.js": "/static/js/787.5ebb2583.chunk.js",
     "static/media/SF-Pro-Rounded-Semibold.otf": "/static/media/SF-Pro-Rounded-Semibold.af98bf892da1313b61a1.otf",
@@ -16,12 +16,12 @@
     "static/media/SF-Pro-Text-LightItalic.otf": "/static/media/SF-Pro-Text-LightItalic.003856cdcda7b5a4f11e.otf",
     "static/media/SF-Pro-Text-RegularItalic.otf": "/static/media/SF-Pro-Text-RegularItalic.49e88ce994926c44a72f.otf",
     "index.html": "/index.html",
-    "main.92e0927f.css.map": "/static/css/main.92e0927f.css.map",
+    "main.30ccb1cb.css.map": "/static/css/main.30ccb1cb.css.map",
     "main.e26b739c.js.map": "/static/js/main.e26b739c.js.map",
     "787.5ebb2583.chunk.js.map": "/static/js/787.5ebb2583.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92e0927f.css",
+    "static/css/main.30ccb1cb.css",
     "static/js/main.e26b739c.js"
   ]
 }
