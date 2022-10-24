@@ -147,3 +147,18 @@
   align-items: center;
   border-radius: 20px;
 }
+
+
+
+
+
+
+.Module_UserProfile {
+  align-items: center;
+}
+.App-mainLeftBottom {
+  text-align: justify;
+}
+.Project_Focus > span {
+  justify-content: left;
+}
