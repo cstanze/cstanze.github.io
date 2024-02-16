@@ -24,8 +24,8 @@ const App = () => {
   // Kill me.
   // - GitHub Copilot
   useEffect(() => {
-    fetch("https://api.exerra.xyz/karen/profile?id=334067823229796367&fetchUser=true").then(async x => {
-      setSelfUser(await x.json())
+    fetch("https://api.exerra.xyz/v2/karen/profile?id=334067823229796367&fetchUser=true").then(async x => {
+      setSelfUser((await x.json()).data)
       // return;
       // eslint-disable-next-line no-unreachable
       await sleep(1000)
