@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  background-color: var(--color-stone-900);
+  color: var(--color-neutral-50);
+}
