@@ -1,9 +1,0 @@
-{
-  "short_name": "cstanze's website",
-  "name": "cstanze's Personal Website",
-  "description": "Heya <3",
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#EC4899",
-  "background_color": "#1a1a1a"
-}
